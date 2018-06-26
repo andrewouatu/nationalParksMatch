@@ -16,8 +16,15 @@
 .logo-area{
     width: 10%;
     height: 80%;
-    border: solid 2px black;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo-image{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .title-area{
@@ -30,7 +37,8 @@
 .title-text{
     color: white;
     font-family: 'Trade Winds', cursive;
-    font-size: 3em;
+    font-size: 4em;
+    margin: 0;
 }
 
 .main-content{
