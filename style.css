@@ -18,7 +18,6 @@
     height: 80%;
     display: flex;
     justify-content: center;
-
 }
 
 .logo-image{
@@ -28,22 +27,25 @@
 }
 
 .title-area{
-    width: 60%;
+    width: 80%;
     height: 80%;
     display: inline-block;
     text-align: center;
+    margin-top: 4%;
 }
 
 .title-text{
     color: white;
-    font-family: 'Trade Winds', cursive;
-    font-size: 4em;
+    font-family: 'Cabin Sketch', cursive;
+    /*font-family: 'Trade Winds', cursive;*/
+    font-size: 400%;
     margin: 0;
 }
 
 .main-content{
     width: 100%;
-    height: 70%;
+    height: 80%;
+    background-image: url("images/taftpoint.jpg");
 }
 
 .game-area{
@@ -66,6 +68,16 @@
     border-radius: 10px;
     display: inline-block;
     background-color: black;
+}
+
+.front{
+    background-image: url("images/yosemitecard.jpg");
+    background-size: cover;
+}
+
+.back{
+    background-image: url("images/npscardlogo.png");
+    background-size: cover;
 }
 
 .stats-footer{
