@@ -75,7 +75,6 @@
 }
 .card-front img{
     width: 100%;
-    z-index: 2;
 }
 
 .card-back{
@@ -86,7 +85,6 @@
 
 .card-back img{
     width: 100%;
-    z-index: 1;
 }
 
 .stats-footer{
@@ -94,3 +92,4 @@
     height: 10%;
     background-color: #24292e;
 }
+
