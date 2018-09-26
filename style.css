@@ -1,0 +1,31 @@
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+#main-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+#header-container{
+    margin: 0 auto;
+    width: 99%;
+    height: 20%;
+    border: solid 2px slategray;
+}
+
+#game-area-container{
+    margin: 0 auto;
+    width: 99%;
+    height: 66%;
+    border: solid 2px coral;
+}
+
+#stats-container{
+    margin: 0 auto;
+    width: 99%;
+    height: 12%;
+    border: solid 2px slategray;
+}
