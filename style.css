@@ -33,19 +33,26 @@ body{
     border: solid 2px slategray;
 }
 
+.image-size{
+    width: 100%;
+    height: 100%;
+}
+
 .card-front{
     position: absolute;
-    background-image: url("images/yosemite.jpg");
-    background-size: contain;
     width: 100%;
     height: 100%;
 }
 
 .card-back{
     position: absolute;
-    background-color: black;
     width: 100%;
     height: 100%;
+    background-color: black;
+}
+
+.hide-card{
+    display: none;
 }
 
 #stats-container{
@@ -54,3 +61,4 @@ body{
     height: 10%;
     border: solid 2px slategray;
 }
+
