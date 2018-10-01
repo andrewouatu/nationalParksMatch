@@ -1,10 +1,14 @@
 $(document).ready(startApp);
 
+var canIClickCard = true;
 var firstCardClicked = null;
 var secondCardClicked = null;
 var totalPossibleMatches = 2;
 var matchCounter = 0;
-var canIClickCard = true;
+var matches = 0;
+var attempts = 0;
+var accuracy = 0;
+var gamesPlayed = 0;
 
 function startApp(){
     applyEventHandlers();
@@ -12,6 +16,7 @@ function startApp(){
 
 function applyEventHandlers(){
     $(".card").click(chooseCard);
+    $("#button").click(resetButtonClick);
 }
 
 function chooseCard(){
@@ -35,14 +40,17 @@ function chooseCard(){
 
     else{
         secondCardClicked = event.currentTarget;
+        attempts++;
 
         var firstCardImageSource = $(firstCardClicked).find('img').attr('src');
         var secondCardImageSource = $(secondCardClicked).find('img').attr('src');
 
         if(firstCardImageSource === secondCardImageSource){
             matchCounter++;
+            matches++;
             firstCardClicked = null;
             secondCardClicked = null;
+            displayStats();
 
                 if(matchCounter === totalPossibleMatches){
                     console.log("YOU WON!");
@@ -56,7 +64,8 @@ function chooseCard(){
         else{
             //If cards don't match, wait 2 second and flip cards back
             canIClickCard = false;
-            setTimeout(flipCardsBack, 2000 );
+            setTimeout(flipCardsBack, 1000 );
+            displayStats();
             return;
         }
 
@@ -72,6 +81,41 @@ function flipCardsBack(){
     secondCardClicked = null;
     canIClickCard = true;
 }
+
+function displayStats(){
+    $("#games-played-value").text(gamesPlayed);
+    $("#attempts-value").text(attempts);
+    $("#accuracy-value").text(calculateGameAccuracy());
+}
+
+function calculateGameAccuracy(){
+    if(attempts === 0){
+        return 0;
+    }
+    accuracy = Math.round((matches/attempts) * 100);
+    return accuracy + "%";
+}
+
+function resetStats(){
+    accuracy = 0;
+    matches = 0;
+    attempts = 0;
+    displayStats();
+}
+
+function resetButtonClick(){
+    gamesPlayed++;
+    resetStats();
+    displayStats();
+    $(".card-back").removeClass("hide-card");
+}
+
+
+
+
+
+
+
 
 
 

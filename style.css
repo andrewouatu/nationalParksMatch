@@ -18,18 +18,18 @@ body{
 
 #game-area-container{
     margin: 0 auto;
-    width: 99%;
-    height: 74%;
+    width: 80%;
+    height: 75%;
     border: solid 2px coral;
     display: flex;
-    align-items: center;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
 .card{
     position: relative;
-    width: 10%;
-    height: 30%;
+    width: 15%;
+    height: 32%;
     border: solid 2px slategray;
 }
 
@@ -60,5 +60,35 @@ body{
     width: 99%;
     height: 10%;
     border: solid 2px slategray;
+}
+
+.stats-header {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.games-played-container{
+    display: inline-block;
+    margin-right: 20px;
+}
+.attempts-container{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.accuracy-container{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.button-container{
+    display: inline-block;
+    margin-right: 20px;
+    float: right;
+}
+
+#accuracy-value{
+    font-size: 20px;
+    color: black;
 }
 
