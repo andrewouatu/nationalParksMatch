@@ -7,15 +7,36 @@ body{
 .container{
     width: 100vw;
     height: 100vh;
+    background-color: #5A5353;
 }
 
 /* *****HEADER CSS BEGINS HERE***** */
 
-.header-container{
+.header-area{
+    /* border: solid 2px slategray; */
     margin: 0 auto;
     width: 99%;
     height: 14%;
-    border: solid 2px slategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7vmin;
+}
+
+.header-text{
+    display: inline-block;
+    font-family: 'Trade Winds', cursive;
+    color: #EBE0C5;
+    /* color: #646F4B; */
+    /* color: #EF592B */
+}
+
+.header-text-alternate-color{
+    display: inline-block;
+    font-family: 'Trade Winds', cursive;
+    color: #EBE0C5;
+    /* color: #EF592B; */
+    padding-left: 20px;
 }
 
 /* *****HEADER CSS ENDS HERE***** */
@@ -33,22 +54,30 @@ body{
 /* *****STATS CSS BEGINS HERE***** */
 
 #stats-container{
+    background-color: #3A3535;
     margin: 0 auto;
     width: 15%;
     height: 75%;
-    border: solid 2px slategray;
+    font-family: 'Trade Winds', cursive;
+    color: #EBE0C5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    font-size: 2vmin;
 }
 
 .games-played-text{
-    display: inline-block;
+    display: block;
 }
 
 .attempts-text{
-    display: inline-block;
+    display: block;
 }
 
 .accuracy-text{
-    display: inline-block;
+    display: block;
 }
 
 /* *****STATS CSS ENDS HERE***** */
@@ -56,20 +85,21 @@ body{
 /* *****GAME AREA CONTAINER CSS BEGINS HERE***** */
 
 .game-area-container{
+    /* border: solid 2px coral; */
     margin: 0 auto;
     width: 80%;
     height: 75%;
-    border: solid 2px coral;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
 .card{
+    border: solid 2px #EBE0C5;
     position: relative;
     width: 15%;
     height: 32%;
-    border: solid 2px slategray;
+    box-shadow: 5px 4px 5px #292626;
 }
 
 .image-size{
@@ -87,7 +117,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #3A3535;
 }
 
 .hide-card{
