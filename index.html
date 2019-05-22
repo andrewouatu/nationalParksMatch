@@ -2,174 +2,171 @@
 <html lang="en">
 
     <head>
-        <title>Memory Match</title>
+        <title>National Parks Match</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="main.js"></script>
     </head>
 
     <body>
             <div class="container">
-
-                    <section class="header-container">
-
+                    <section class="header-area">
+                        <div class="header-text">National Parks</div>
+                        <div class="header-text-alternate-color">Match</div>
                     </section>
 
-                    <div class="main-area">
+                    <section class="main-area">
+                        <div id="stats-container">
+                            <div class="games-played-container">
+                                <p class="games-played-text">GAMES PLAYED</p>
+                                <span id="games-played-value"></span>
+                            </div>
+    
+                            <div class="attempts-container">
+                                <p class="attempts-text">ATTEMPTS</p>
+                                <span id="attempts-value"></span>
+                            </div>
+    
+                            <div class="accuracy-container">
+                                <p class="accuracy-text">ACCURACY</p>
+                                <span id="accuracy-value"></span>
+                            </div>
+    
+                            <div class="button-container">
+                                <button id="button">RESET</button>
+                            </div>
+                        </div>
 
-                            <section id="stats-container">
-            
-                                    <div class="games-played-container">
-                                        <p class="games-played-text">GAMES PLAYED:</p>
-                                        <span id="games-played-value"></span>
-                                    </div>
-            
-                                    <div class="attempts-container">
-                                        <p class="attempts-text">ATTEMPTS:</p>
-                                        <span id="attempts-value"></span>
-                                    </div>
-            
-                                    <div class="accuracy-container">
-                                        <p class="accuracy-text">ACCURACY:</p>
-                                        <span id="accuracy-value"></span>
-                                    </div>
-            
-                                    <div class="button-container">
-                                        <button id="button">RESET</button>
-                                    </div>
-            
-                            </section>
+                        <div class="game-area-container">
 
-                            <section class="game-area-container">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/ynp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
 
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/ynp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-        
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/rmnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/bcnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/anp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/anp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/bcnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/gsmnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/znp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/ynp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/dnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/mtrnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/dnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/gsmnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/znp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/kcnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/kcnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/mtrnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                                    <div class="card">
-                                        <div class="card-front">
-                                            <img class="image-size" src="images/rmnp.jpg">
-                                        </div>
-                                        <div class="card-back"></div>
-                                    </div>
-            
-                            </section>
-                    </div>
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/rmnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/bcnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/anp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/anp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/bcnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/gsmnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/znp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/ynp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/dnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/mtrnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/dnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/gsmnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/znp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/kcnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/kcnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/mtrnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card-front">
+                                    <img class="image-size" src="images/rmnp.jpg">
+                                </div>
+                                <div class="card-back"></div>
+                            </div>
+                        </div>
+                    </section>
             </div>
     </body>
 </html>
