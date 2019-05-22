@@ -4,19 +4,58 @@ body{
     overflow: hidden;
 }
 
-#main-container{
+.container{
     width: 100vw;
     height: 100vh;
 }
 
-#header-container{
+/* *****HEADER CSS BEGINS HERE***** */
+
+.header-container{
     margin: 0 auto;
     width: 99%;
     height: 14%;
     border: solid 2px slategray;
 }
 
-#game-area-container{
+/* *****HEADER CSS ENDS HERE***** */
+
+/* *****MAIN AREA CSS BEGINS HERE***** */
+
+.main-area{
+    height: 100vh;
+    display: flex;
+}
+
+/* *****MAIN AREA CSS ENDS HERE***** */
+
+
+/* *****STATS CSS BEGINS HERE***** */
+
+#stats-container{
+    margin: 0 auto;
+    width: 15%;
+    height: 75%;
+    border: solid 2px slategray;
+}
+
+.games-played-text{
+    display: inline-block;
+}
+
+.attempts-text{
+    display: inline-block;
+}
+
+.accuracy-text{
+    display: inline-block;
+}
+
+/* *****STATS CSS ENDS HERE***** */
+
+/* *****GAME AREA CONTAINER CSS BEGINS HERE***** */
+
+.game-area-container{
     margin: 0 auto;
     width: 80%;
     height: 75%;
@@ -55,40 +94,6 @@ body{
     display: none;
 }
 
-#stats-container{
-    margin: 0 auto;
-    width: 99%;
-    height: 10%;
-    border: solid 2px slategray;
-}
+/* *****GAME AREA CONTAINER CSS ENDS HERE***** */
 
-.stats-header {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.games-played-container{
-    display: inline-block;
-    margin-right: 20px;
-}
-.attempts-container{
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.accuracy-container{
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.button-container{
-    display: inline-block;
-    margin-right: 20px;
-    float: right;
-}
-
-#accuracy-value{
-    font-size: 20px;
-    color: black;
-}
 
