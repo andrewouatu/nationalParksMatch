@@ -114,6 +114,22 @@ body{
     display: none;
 }
 
+.modal-body > p {
+    color: black;
+    font-size: 2rem;
+}
+
+
+
+.modal-header {
+    background-color: rgb(4, 7, 12);
+    color: rgb(235, 235, 231);
+}
+
+.botum {
+    background-color: rgb(0, 110, 255);
+}
+
 /* *****GAME AREA CONTAINER END***** */
 
 /* *****MEDIA QUERIES START***** */

@@ -3,14 +3,110 @@
 
     <head>
         <title>National Parks Match</title>
-        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
         <script src="main.js"></script>
     </head>
 
     <body>
+            <!-- <div id="intro_modal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h2 class="modal-title text-center ">W E L C O M E <br/> t o <br/> ' National Parks Match '  </h2>  
+                            </div>
+                            <div class="botum">
+                                <div class="modal-body">
+                                    <p class=" text-center ">TEST TEST TEST TEST
+                                    </p>
+                                    
+                                </div>
+                                <div class="modal-footer text-center ">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">PLAY</button>
+                                </div> 
+                            </div>
+                                 
+                        </div>
+            
+                    </div>    
+                </div>
+                <div id="win_modal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title text-center ">You Win!<br/>Congratulations...</h3>
+                                
+                            </div>
+                            <div class="modal-body">
+                                <p class=" text-center ">
+                                    To play again click on "X" or "Play" button.
+                                </p>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Play</button>
+                            </div>
+                                  
+                            </div>
+                
+                        </div>
+                                
+                                
+                    </div> -->
             <div class="container">
+                    <div id="intro_modal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h2 class="modal-title text-center ">W E L C O M E <br/> t o <br/> ' National Parks Match '  </h2>  
+                                    </div>
+                                    <div class="botum">
+                                        <div class="modal-body">
+                                            <p class=" text-center ">TEST TEST TEST TEST
+                                            </p>
+                                            
+                                        </div>
+                                        <div class="modal-footer text-center ">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">PLAY</button>
+                                        </div> 
+                                    </div>
+                                         
+                                </div>
+                    
+                            </div>    
+                        </div>
+                        <div id="win_modal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title text-center ">You Win!<br/>Congratulations...</h3>
+                                        
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class=" text-center ">
+                                            To play again click on "X" or "Play" button.
+                                        </p>
+                                        
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Play</button>
+                                    </div>
+                                          
+                                    </div>
+                        
+                                </div>
+                                        
+                                        
+                            </div>
                     <section class="header-area">
                         <div class="header-text">National Parks Match</div>
                     </section>
@@ -19,26 +115,26 @@
                         <div id="stats-container">
                             <div class="games-played-container">
                                 <p class="games-played-text">GAMES PLAYED</p>
-                                <span id="games-played-value"></span>
+                                <span id="games-played-value">0</span>
                             </div>
     
                             <div class="attempts-container">
                                 <p class="attempts-text">ATTEMPTS</p>
-                                <span id="attempts-value"></span>
+                                <span id="attempts-value">0</span>
                             </div>
     
                             <div class="accuracy-container">
                                 <p class="accuracy-text">ACCURACY</p>
-                                <span id="accuracy-value"></span>
+                                <span id="accuracy-value">0%</span>
                             </div>
     
                             <div class="button-container">
-                                <button id="button">RESET</button>
+                                <button class="btn btn-default">RESET</button>
                             </div>
                         </div>
 
                         <div class="game-area-container">
-
+ 
                             <!-- <div class="card">
                                 <div class="card-front">
                                     <img class="image-size" src="images/ynp.jpg">

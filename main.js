@@ -3,7 +3,7 @@ $(document).ready(startApp);
 var canIClickCard = true;
 var firstCardClicked = null;
 var secondCardClicked = null;
-var totalPossibleMatches = 2;
+var totalPossibleMatches = 9;
 var matchCounter = 0;
 var matches = 0;
 var attempts = 0;
@@ -28,16 +28,27 @@ var cards = [
     'images/ysnp.jpg',
     'images/znp.jpg',
     'images/znp.jpg',
-]
+];
 
 function startApp(){
     createGameBoardCards();
     applyEventHandlers();
+    displaytIntroModal();
 }
 
 function applyEventHandlers(){
     $(".card").click(chooseCard);
     $("#button").click(resetButtonClick);
+}
+
+function displaytIntroModal(){
+    $('#intro_modal').modal('show');
+    console.log("Intro modal was shown");
+}
+
+function displaytWinModal(){
+    $('#win_modal').modal('show');
+    console.log("Win modal was shown");
 }
 
 //Randomizes cards on the game board
@@ -48,7 +59,7 @@ function randomizeCards(){
 //Dynamically creates the cards on the game board
 function createGameBoardCards(){
     randomizeCards();
-
+    
     for(var cardIndex=0; cardIndex < cards.length; cardIndex++){
         var card = $('<div>').addClass('card');
         var front = $('<div>').addClass('card-front');
@@ -99,6 +110,9 @@ function chooseCard(){
 
                 if(matchCounter === totalPossibleMatches){
                     console.log("YOU WON!");
+                    gamesPlayed++;
+                    displayStats();
+                    displaytWinModal();
                 }
 
                 else{
