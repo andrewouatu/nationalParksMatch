@@ -10,7 +10,7 @@ body{
     background-color: #5A5353;
 }
 
-/* *****HEADER CSS BEGINS HERE***** */
+/* *****HEADER START***** */
 
 .header-area{
     /* border: solid 2px slategray; */
@@ -20,49 +20,42 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 7vmin;
+    font-size: 9vmin;
 }
 
 .header-text{
     display: inline-block;
-    font-family: 'Gugi', cursive;
-    color: #678154;
+    font-family: 'Amatic SC', cursive;
+    color: #EBE0C5;
 }
 
-.header-text-alternate-color{
-    display: inline-block;
-    font-family: 'Gugi', cursive;
-    color: #678154;
-    padding-left: 20px;
-}
+/* *****HEADER END***** */
 
-/* *****HEADER CSS ENDS HERE***** */
-
-/* *****MAIN AREA CSS BEGINS HERE***** */
+/* *****MAIN AREA START***** */
 
 .main-area{
     height: 100vh;
     display: flex;
 }
 
-/* *****MAIN AREA CSS ENDS HERE***** */
+/* *****MAIN AREA END***** */
 
 
-/* *****STATS CSS BEGINS HERE***** */
+/* *****STATS START***** */
 
 #stats-container{
     background-color: #3A3535;
     margin: 0 auto;
     width: 15%;
     height: 75%;
-    font-family: 'Gugi', cursive;
+    font-family: 'Amatic SC', cursive;
     color: #EBE0C5;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 10px;
-    font-size: 2vmin;
+    font-size: 4vmin;
 }
 
 .games-played-text{
@@ -77,9 +70,9 @@ body{
     display: block;
 }
 
-/* *****STATS CSS ENDS HERE***** */
+/* *****STATS END***** */
 
-/* *****GAME AREA CONTAINER CSS BEGINS HERE***** */
+/* *****GAME AREA CONTAINER START***** */
 
 .game-area-container{
     /* border: solid 2px coral; */
@@ -121,9 +114,9 @@ body{
     display: none;
 }
 
-/* *****GAME AREA CONTAINER CSS ENDS HERE***** */
+/* *****GAME AREA CONTAINER END***** */
 
-/* *****MEDIA QUERIES***** */
+/* *****MEDIA QUERIES START***** */
 
 @media screen and (orientation: portrait){
 

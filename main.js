@@ -9,8 +9,29 @@ var matches = 0;
 var attempts = 0;
 var accuracy = 0;
 var gamesPlayed = 0;
+var cards = [
+    'images/dnp.jpg',
+    'images/dnp.jpg',
+    'images/gnp.jpg',
+    'images/gnp.jpg',
+    'images/gcnp.jpg',
+    'images/gcnp.jpg',
+    'images/gsmnp.jpg',
+    'images/gsmnp.jpg',
+    'images/jtnp.jpg',
+    'images/jtnp.jpg',
+    'images/rmnp.jpg',
+    'images/rmnp.jpg',
+    'images/ynp.jpg',
+    'images/ynp.jpg',
+    'images/ysnp.jpg',
+    'images/ysnp.jpg',
+    'images/znp.jpg',
+    'images/znp.jpg',
+]
 
 function startApp(){
+    createGameBoardCards();
     applyEventHandlers();
 }
 
@@ -18,6 +39,30 @@ function applyEventHandlers(){
     $(".card").click(chooseCard);
     $("#button").click(resetButtonClick);
 }
+
+//Randomizes cards on the game board
+function randomizeCards(){
+    cards.sort(function(a, b){return 0.5 - Math.random()});
+}
+
+//Dynamically creates the cards on the game board
+function createGameBoardCards(){
+    randomizeCards();
+
+    for(var cardIndex=0; cardIndex < cards.length; cardIndex++){
+        var card = $('<div>').addClass('card');
+        var front = $('<div>').addClass('card-front');
+        var frontImage = $('<img>', {
+            class: 'image-size',
+            src: cards[cardIndex],
+        });
+        var back = $('<div>').addClass('card-back');
+        front.append(frontImage);
+        card.append(front);
+        card.append(back);
+        $('.game-area-container').append(card);
+        }
+    }
 
 function chooseCard(){
 
@@ -104,10 +149,12 @@ function resetStats(){
 }
 
 function resetButtonClick(){
-    gamesPlayed++;
     resetStats();
     displayStats();
-    $(".card-back").removeClass("hide-card");
+    
+    $('.game-area-container').empty();
+    createGameBoardCards();
+    applyEventHandlers();
 }
 
 
