@@ -43,22 +43,20 @@ function applyEventHandlers(){
 
 function displaytIntroModal(){
     $('#intro_modal').modal('show');
-    console.log("Intro modal was shown");
 }
 
 function displaytWinModal(){
     $('#win_modal').modal('show');
-    console.log("Win modal was shown");
 }
 
 //Randomizes cards on the game board
-function randomizeCards(){
-    cards.sort(function(a, b){return 0.5 - Math.random()});
-}
+// function randomizeCards(){
+//     cards.sort(function(a, b){return 0.5 - Math.random()});
+// }
 
 //Dynamically creates the cards on the game board
 function createGameBoardCards(){
-    randomizeCards();
+    // randomizeCards();
     
     for(var cardIndex=0; cardIndex < cards.length; cardIndex++){
         var card = $('<div>').addClass('card');
@@ -109,10 +107,10 @@ function chooseCard(){
             displayStats();
 
                 if(matchCounter === totalPossibleMatches){
-                    console.log("YOU WON!");
                     gamesPlayed++;
                     displayStats();
                     displaytWinModal();
+                    setTimeout(resetButtonClick, 1000);
                 }
 
                 else{
