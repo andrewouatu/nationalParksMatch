@@ -105,12 +105,9 @@ function chooseCard(){
             firstCardClicked = null;
             secondCardClicked = null;
             displayStats();
-
                 if(matchCounter === totalPossibleMatches){
-                    gamesPlayed++;
                     displayStats();
                     displaytWinModal();
-                    setTimeout(resetButtonClick, 1000);
                 }
 
                 else{
@@ -119,9 +116,11 @@ function chooseCard(){
 
         }
         else{
-            //If cards don't match, wait 2 second and flip cards back
+            //If cards don't match, wait 1 second and flip cards back
             canIClickCard = false;
             setTimeout(flipCardsBack, 1000 );
+            // firstCardClicked = null;
+            // secondCardClicked = null;
             displayStats();
             return;
         }
@@ -157,6 +156,10 @@ function resetStats(){
     accuracy = 0;
     matches = 0;
     attempts = 0;
+    matchCounter = 0;
+    gamesPlayed++;
+    firstCardClicked = null;
+    secondCardClicked = null;
     displayStats();
 }
 
