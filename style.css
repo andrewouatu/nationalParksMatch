@@ -113,24 +113,52 @@ body{
 .hide-card{
     display: none;
 }
+/* *****GAME AREA CONTAINER END***** */
+
+/* *****MODAL START***** */
 
 .modal-body > p {
-    color: black;
-    font-size: 2rem;
+    color: rgb(235, 235, 231);
+    font-size: 3rem;
+    font-family: 'Amatic SC', cursive;
 }
 
-
-
 .modal-header {
-    background-color: rgb(4, 7, 12);
+    color: rgb(235, 235, 231);
+    font-family: 'Amatic SC', cursive;
+    border: solid 0px;
+    font-size: 7rem;
+}
+
+.bottom-section {
     color: rgb(235, 235, 231);
 }
 
-.botum {
-    background-color: rgb(0, 110, 255);
+.modal-content{
+    background-color: transparent;
 }
 
-/* *****GAME AREA CONTAINER END***** */
+.modal.in .modal-dialog{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.modal-footer{
+    border: solid 0px;
+    text-align: center;
+}
+
+.modal-border{
+    width: 75%;
+    margin: 0 auto;
+    border: 0.5px solid #e5e5e5;
+}
+
+.modal-dialog{
+    position: relative;
+    top: 15%;
+}
+
+/* *****MODAL END***** */
 
 /* *****MEDIA QUERIES START***** */
 
