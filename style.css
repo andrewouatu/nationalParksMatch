@@ -20,7 +20,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 9vmin;
+    font-size: 10vmin;
 }
 
 .header-text{
@@ -85,7 +85,7 @@ body{
 }
 
 .card{
-    border: solid 2px #EBE0C5;
+    /* border: solid 2px #EBE0C5; */
     position: relative;
     width: 15%;
     height: 32%;
@@ -103,11 +103,18 @@ body{
     height: 100%;
 }
 
+.background-image-size{
+    width: 70%;
+}
+
 .card-back{
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: #3A3535;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .hide-card{
