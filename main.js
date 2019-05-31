@@ -66,8 +66,13 @@ function createGameBoardCards(){
             src: cards[cardIndex],
         });
         var back = $('<div>').addClass('card-back');
+        var backImage = $('<img>', {
+            class: 'background-image-size',
+            src: 'images/npslogohd.png'
+        });
         front.append(frontImage);
         card.append(front);
+        back.append(backImage);
         card.append(back);
         $('.game-area-container').append(card);
         }
