@@ -9,6 +9,7 @@ var matches = 0;
 var attempts = 0;
 var accuracy = 0;
 var gamesPlayed = 0;
+var touched = 0;
 var cards = [
     'images/dnp.jpg',
     'images/dnp.jpg',
@@ -79,6 +80,7 @@ function createGameBoardCards(){
     }
 
 function chooseCard(){
+    touched++;
 
     if(canIClickCard === false){
         return;
@@ -124,8 +126,6 @@ function chooseCard(){
             //If cards don't match, wait 1 second and flip cards back
             canIClickCard = false;
             setTimeout(flipCardsBack, 1000 );
-            // firstCardClicked = null;
-            // secondCardClicked = null;
             displayStats();
             return;
         }
@@ -158,13 +158,16 @@ function calculateGameAccuracy(){
 }
 
 function resetStats(){
+    if(touched > 0){
+        gamesPlayed++
+    }
     accuracy = 0;
     matches = 0;
     attempts = 0;
     matchCounter = 0;
-    gamesPlayed++;
     firstCardClicked = null;
     secondCardClicked = null;
+    touched = null;
     displayStats();
 }
 

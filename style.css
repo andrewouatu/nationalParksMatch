@@ -84,8 +84,8 @@ body{
     justify-content: space-around;
 }
 
-.card{
-    /* border: solid 2px #EBE0C5; */
+.card {
+    border: solid 4px #EBE0C5;
     position: relative;
     width: 15%;
     height: 32%;
@@ -104,7 +104,7 @@ body{
 }
 
 .background-image-size{
-    width: 70%;
+    width: 60%;
 }
 
 .card-back{
