@@ -85,6 +85,7 @@ body{
 }
 
 .card {
+    cursor: pointer;
     border: solid 4px #EBE0C5;
     position: relative;
     width: 15%;
@@ -115,6 +116,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.card-back:hover{
+    background-color: #EBE0C5;
 }
 
 .hide-card{
