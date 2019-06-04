@@ -20,7 +20,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10vmin;
+    font-size: 9vmin;
 }
 
 .header-text{
@@ -46,8 +46,8 @@ body{
 #stats-container{
     background-color: #3A3535;
     margin: 0 auto;
-    width: 15%;
-    height: 75%;
+    width: 13%;
+    height: 74%;
     font-family: 'Amatic SC', cursive;
     color: #EBE0C5;
     text-align: center;
@@ -55,7 +55,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 10px;
-    font-size: 4vmin;
+    font-size: 3vmin;
 }
 
 .games-played-text{
@@ -68,6 +68,20 @@ body{
 
 .accuracy-text{
     display: block;
+}
+
+.reset-button{
+    width: 50%;
+    height: 100%;
+    font-size: 2.5vmin;
+    text-align: center;
+    background-color: #EBE0C5;
+    border: #EBE0C5;
+}
+
+.reset-button:hover{
+    background-color: #EBE0C5;
+    border: #EBE0C5;
 }
 
 /* *****STATS END***** */

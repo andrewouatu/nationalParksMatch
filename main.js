@@ -51,13 +51,13 @@ function displaytWinModal(){
 }
 
 //Randomizes cards on the game board
-// function randomizeCards(){
-//     cards.sort(function(a, b){return 0.5 - Math.random()});
-// }
+function randomizeCards(){
+    cards.sort(function(a, b){return 0.5 - Math.random()});
+}
 
 //Dynamically creates the cards on the game board
 function createGameBoardCards(){
-    // randomizeCards();
+    randomizeCards();
     
     for(var cardIndex=0; cardIndex < cards.length; cardIndex++){
         var card = $('<div>').addClass('card');
@@ -69,7 +69,7 @@ function createGameBoardCards(){
         var back = $('<div>').addClass('card-back');
         var backImage = $('<img>', {
             class: 'background-image-size',
-            src: 'images/npslogohd.png'
+            src: 'images/npslogo.png'
         });
         front.append(frontImage);
         card.append(front);
