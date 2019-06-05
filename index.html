@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>National Parks Match</title>
+        <link rel="icon" href="images/npslogo.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+
+                <div id="intro_modal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                            <p class="modal-title text-center ">WELCOME TO</p> 
+                            <p class="modal-title text-center ">NATIONAL PARKS MATCH</p>   
+                        </div>
+                        <div class="modal-border"></div>
+                        <div class="bottom-section">
+                            <div class="modal-body">
+                                <p class=" text-center ">Enjoy a fun game of memory match</p>
+                                <p class=" text-center ">To win, find all the matching pairs</p>
+                            </div>
+                            <div class="modal-border"></div>
+                            <div class="modal-footer text-center justify-content center">
+                                <button type="button" class="btn btn-default btn-md" data-dismiss="modal">PLAY</button>
+                            </div>
+                        </div>         
+                        </div>
+                    </div>    
+                </div>
+
+                <div id="win_modal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                            <p class="modal-title text-center ">CONGRATULATIONS</p> 
+                            <p class="modal-title text-center ">YOU WIN!</p>   
+                        </div>
+                        <div class="modal-border"></div>
+                        <div class="modal-footer">
+                            <button onclick="resetButtonClick()" type="button" class="btn btn-default btn-md" data-dismiss="modal">PLAY AGAIN</button>
+                        </div>         
+                        </div>
+                    </div>             
+                </div>
+
+                <section class="header-area">
+                    <div class="header-text">National Parks Match</div>
+                </section>
+
+                <section class="main-area">
+                    <div id="stats-container">
+                        <div class="games-played-container">
+                            <p class="games-played-text">GAMES PLAYED</p>
+                            <span id="games-played-value">0</span>
+                        </div>
+
+                        <div class="attempts-container">
+                            <p class="attempts-text">ATTEMPTS</p>
+                            <span id="attempts-value">0</span>
+                        </div>
+
+                        <div class="accuracy-container">
+                            <p class="accuracy-text">ACCURACY</p>
+                            <span id="accuracy-value">0%</span>
+                        </div>
+
+                        <div class="button-container">
+                            <button onclick="resetButtonClick()" class="reset-button btn btn-default">RESET</button>
+                        </div>
+                    </div>
+
+                    <div class="game-area-container">
+                        <!-- <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/ynp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/rmnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/jtnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/gnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/gnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/jtnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/gsmnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/znp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/ynp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/dnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/gcnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/dnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/gsmnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/znp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/ysnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/ysnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/gcnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-front">
+                                <img class="image-size" src="images/rmnp.jpg">
+                            </div>
+                            <div class="card-back"></div>
+                        </div> -->
+                    </div>
+                </section>
+        </div>
+    </body>
+</html>
