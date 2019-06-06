@@ -7,27 +7,26 @@ body{
 .container{
     width: 100%;
     height: 100%;
-    /* background-color: #5A5353; */
     background-image: url("images/trees.jpg");
     background-position: center;
+    background-size: cover;
 }
 
 /* *****HEADER START***** */
 
 .header-area{
-    /* border: solid 2px slategray; */
     margin: 0 auto;
     width: 99%;
     height: 14%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 9vmin;
+    font-size: 10vmin;
 }
 
 .header-text{
     display: inline-block;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', Verdana;
     color: #EBE0C5;
 }
 
@@ -46,18 +45,18 @@ body{
 /* *****STATS START***** */
 
 #stats-container{
-    background-color: #3A3535;
+    background-color:#38322E;
     margin: 0 auto;
     width: 13%;
     height: 74%;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', Verdana;
     color: #EBE0C5;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 10px;
-    font-size: 3vmin;
+    font-size: 4vmin;
 }
 
 .games-played-text{
@@ -75,7 +74,7 @@ body{
 .reset-button{
     width: 50%;
     height: 100%;
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     text-align: center;
     background-color: #EBE0C5;
     border: #EBE0C5;
@@ -91,13 +90,13 @@ body{
 /* *****GAME AREA CONTAINER START***** */
 
 .game-area-container{
-    /* border: solid 2px coral; */
     margin: 0 auto;
     width: 80%;
     height: 75%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    user-select: none;
 }
 
 .card {
@@ -128,7 +127,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #3A3535;
+    background-color:#38322E;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -189,7 +188,6 @@ body{
 /* *****MODAL END***** */
 
 /* *****MEDIA QUERIES START***** */
-
 @media screen and (orientation: portrait){
 
     .card{
@@ -202,8 +200,13 @@ body{
     }
 
     #stats-container{
-        height: 56%;
+        height: 56.5%;
         width: 25%;
+        font-size: 5vmin;
+    }
+
+    .reset-button{
+        font-size: 4vmin;
     }
 
     .game-area-container{
@@ -214,5 +217,19 @@ body{
         font-size: 4rem;
     }
 
+    #intro_modal .btn{
+        width: 25%;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    #win_modal .btn{
+        width: 25%;
+        height: 60px;
+        font-size: 20px;
+    }
+
 }
+/* *****MEDIA QUERIES END***** */
+
 
