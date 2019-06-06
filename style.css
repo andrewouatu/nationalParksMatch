@@ -26,7 +26,7 @@ body{
 
 .header-text{
     display: inline-block;
-    font-family: 'Amatic SC', Verdana;
+    font-family: 'Amatic SC', sans-serif;
     color: #EBE0C5;
 }
 
@@ -49,14 +49,14 @@ body{
     margin: 0 auto;
     width: 13%;
     height: 74%;
-    font-family: 'Amatic SC', Verdana;
+    font-family: 'Amatic SC', sans-serif;
     color: #EBE0C5;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 10px;
-    font-size: 4vmin;
+    font-size: 3vmin;
 }
 
 .games-played-text{
@@ -154,7 +154,7 @@ body{
     color: rgb(235, 235, 231);
     font-family: 'Amatic SC', cursive;
     border: solid 0px;
-    font-size: 7rem;
+    font-size: 6.5rem;
 }
 
 .bottom-section {
@@ -180,11 +180,6 @@ body{
     border: 0.5px solid #e5e5e5;
 }
 
-.modal-dialog{
-    position: relative;
-    top: 15%;
-}
-
 /* *****MODAL END***** */
 
 /* *****MEDIA QUERIES START***** */
@@ -202,7 +197,7 @@ body{
     #stats-container{
         height: 56.5%;
         width: 25%;
-        font-size: 5vmin;
+        font-size: 4vmin;
     }
 
     .reset-button{
@@ -213,19 +208,23 @@ body{
         height: 87%;
     }
 
+    .modal-header{
+        font-size: 6.5rem;
+    }
+
     .modal-body > p{
         font-size: 4rem;
     }
 
     #intro_modal .btn{
-        width: 25%;
-        height: 60px;
-        font-size: 25px;
+        width: 20%;
+        height: 45px;
+        font-size: 20px;
     }
 
     #win_modal .btn{
         width: 25%;
-        height: 60px;
+        height: 45px;
         font-size: 20px;
     }
 
