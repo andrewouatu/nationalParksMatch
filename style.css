@@ -1,3 +1,11 @@
+@font-face{
+    font-family: 'Amatic SC';
+    src: url(files/AmaticSC-Regular.ttf);
+}
+
+html{
+    font-display: swap;
+}
 
 body{
     margin: 0;
@@ -26,7 +34,7 @@ body{
 
 .header-text{
     display: inline-block;
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Amatic SC';
     color: #EBE0C5;
 }
 
@@ -49,7 +57,7 @@ body{
     margin: 0 auto;
     width: 13%;
     height: 74%;
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Amatic SC';
     color: #EBE0C5;
     text-align: center;
     display: flex;
@@ -144,15 +152,21 @@ body{
 
 /* *****MODAL START***** */
 
+#intro_modal .btn{
+    width: 8%;
+    height: 50px;
+    font-size: 20px;
+}
+
 .modal-body > p {
     color: rgb(235, 235, 231);
     font-size: 4rem;
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Amatic SC';
 }
 
 .modal-header {
     color: rgb(235, 235, 231);
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Amatic SC';
     border: solid 0px;
     font-size: 7rem;
     padding: 10px;
@@ -228,9 +242,9 @@ body{
     }
 
     #intro_modal .btn{
-        width: 15%;
-        height: 70px;
-        font-size: 30px;
+        width: 20%;
+        height: 75px;
+        font-size: 35px;
     }
 
     #win_modal .btn{
@@ -245,6 +259,16 @@ body{
     
     #win_modal{
         padding-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width:1366px) and (orientation: landscape){
+
+    #intro_modal .btn{
+        width: 15%;
+        height: 50px;
+        font-size: 25px;
     }
 
 }
